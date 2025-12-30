@@ -4,7 +4,14 @@ import { registerUser, loginUser, deleteUser, updatepassword, updateuser, getUse
 import { upload } from "../middleware/upload.js";
 
 const router = express.Router();
+import multer from "multer";
 
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, "uploads/"),
+  filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname),
+});
+
+export const upload = multer({ storage });
 router.post("/register", upload.single("profilePicture"), registerUser);
 router.post("/login", loginUser);
 router.post("/delete", deleteUser);

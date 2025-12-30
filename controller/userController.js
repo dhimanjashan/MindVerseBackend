@@ -16,7 +16,7 @@ import fetch from "node-fetch";
 import dotenv from "dotenv";
 dotenv.config();
 
-
+const SERVER_URL = process.env.SERVER_URL || "https://mindversebackend-1-f4oh.onrender.com";
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, bio } = req.body;
@@ -48,7 +48,7 @@ export const registerUser = async (req, res) => {
     res.status(201).json({
       success: true,
       message: "User registered successfully",
-      user: { id: user._id, name: user.name, email: user.email, bio: user.bio, profilePicture: `http://172.20.10.3:5000/uploads/${profilePicture.filename}`, },
+      user: { id: user._id, name: user.name, email: user.email, bio: user.bio, profilePicture: `${SERVER_URL}/uploads/${profilePicture.filename}`, },
     });
   } catch (error) {
     console.error("Register error:", error);
