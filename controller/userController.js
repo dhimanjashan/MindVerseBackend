@@ -16,7 +16,7 @@ import fetch from "node-fetch";
 import dotenv from "dotenv";
 dotenv.config();
 
-const SERVER_URL = process.env.SERVER_URL || "https://mindversebackend-1-f4oh.onrender.com";
+const SERVER_URL = "https://mindversebackend-1-f4oh.onrender.com";
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, bio } = req.body;
