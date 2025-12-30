@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 let isConnected = false;
 
-export async function connectToMongo(uri = "mongodb://localhost:27017/Thoughtify") {
+export async function connectToMongo(uri = process.env.MindVerse_DB_URI) {
     if (isConnected) return mongoose.connection;
     await mongoose.connect(uri);
     isConnected = true;
