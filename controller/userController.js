@@ -7,7 +7,7 @@ import MyThoughts from "../models/myThoughts.js";
 import MyFavorites from "../models/favoriteThoughts.js";
 import AllThought from "../models/allthoughtModel.js";
 import Liked from "../models/likedThoughts.js";
-import PunjabThought from "../models/punjabiThought.js";
+import PunjabiThought from "../models/punjabiThought.js";
 import HindiThought from "../models/hindiThought.js";
 import ReadThought from "../models/readThoughtCount.js";
 import fs from "fs";
@@ -581,7 +581,7 @@ export const deleteSaved = async (req, res) => {
 
 export const getPunjabiThoughts = async (req,res)=>{
   try {
-    const thoughts = await PunjabThought.find();
+    const thoughts = await PunjabiThought.find();
     res.status(200).json({success:true,message:"Thoughts fetched successfully",thoughts:thoughts});
   } catch (error) {
     console.error("Get thoughts error:", error);
