@@ -10,5 +10,5 @@ const punjabiThoughtSchema = new mongoose.Schema({
         required:true,
     }
 });
-const PunjabThought = mongoose.models.PunjabThought || mongoose.model("PunjabThought", punjabiThoughtSchema);
-export default PunjabThought;
+const PunjabiThought = mongoose.models.PunjabThought || mongoose.model("PunjabiThought", punjabiThoughtSchema);
+export default PunjabiThought;
