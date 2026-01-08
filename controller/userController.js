@@ -35,20 +35,20 @@ export const registerUser = async (req, res) => {
     // Hash password
     const salt = await bcrypt.genSalt(10)
     const hashedPassword = await bcrypt.hash(password, salt);
-
+const imageUrl = `${SERVER_URL}/uploads/${profilePicture.filename}`;
     // Create user
     const user = await User.create({
       name,
       email,
       password: hashedPassword,
       bio,
-      profilePicture: `/uploads/${profilePicture.filename}`,
+      profilePicture: imageUrl,
     });
 
     res.status(201).json({
       success: true,
       message: "User registered successfully",
-      user: { id: user._id, name: user.name, email: user.email, bio: user.bio, profilePicture: `${SERVER_URL}/uploads/${profilePicture.filename}`, },
+      user: { id: user._id, name: user.name, email: user.email, bio: user.bio, profilePicture:user.profilePicture, },
     });
   } catch (error) {
     console.error("Register error:", error);
