@@ -1,7 +1,8 @@
 // routes/userRoutes.js
 import express from "express";
 import { registerUser, loginUser, deleteUser, updatepassword, updateuser, getUser, getThoughts,saveThought,getSavedThoughts,saveMyThoughts,getMyThoughts,deleteThought,saveMyFavorites,getMyFavorites,deleteFavorite,getAllThoughts,saveLikedThought,getLikedThoughts,deleteSaved,getPunjabiThoughts,getHindiThoughts,saveReadThought,getReadThought,getAiThought } from "../controller/userController.js";
-import { upload } from "../middleware/upload.js";
+// import { upload } from "../middleware/upload.js";
+import upload from "../config/multer.js";
 
 const router = express.Router();
 router.post("/register", upload.single("profilePicture"), registerUser);

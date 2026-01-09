@@ -29,13 +29,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bcryptjs", "npm:3.0.2"],\
+          ["cloudinary", "npm:2.8.0"],\
           ["cors", "npm:2.8.5"],\
           ["dotenv", "npm:17.2.3"],\
           ["express", "npm:5.2.1"],\
           ["expressjs", "npm:1.0.1"],\
           ["jsonwebtoken", "npm:9.0.2"],\
+          ["mongodb", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.0"],\
           ["mongoose", "npm:8.19.2"],\
           ["multer", "npm:2.0.2"],\
+          ["multer-storage-cloudinary", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.0"],\
           ["node-fetch", "npm:3.3.2"],\
           ["nodemon", "npm:3.1.11"],\
           ["root-workspace-0b6124", "workspace:."]\
@@ -121,6 +124,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/webidl-conversions", "npm:7.0.3"],\
           ["@types/whatwg-url", "npm:11.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.0.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/@types-whatwg-url-npm-13.0.0-608dd9833f-10c0.zip/node_modules/@types/whatwg-url/",\
+        "packageDependencies": [\
+          ["@types/webidl-conversions", "npm:7.0.3"],\
+          ["@types/whatwg-url", "npm:13.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -247,6 +258,13 @@ const RAW_RUNTIME_STATE =
           ["bson", "npm:6.10.4"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/bson-npm-7.0.0-03b2fb23d5-10c0.zip/node_modules/bson/",\
+        "packageDependencies": [\
+          ["bson", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["buffer-equal-constant-time", [\
@@ -350,6 +368,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/chownr-npm-3.0.0-5275e85d25-10c0.zip/node_modules/chownr/",\
         "packageDependencies": [\
           ["chownr", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cloudinary", [\
+      ["npm:2.8.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/cloudinary-npm-2.8.0-61d8aed053-10c0.zip/node_modules/cloudinary/",\
+        "packageDependencies": [\
+          ["cloudinary", "npm:2.8.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["q", "npm:1.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1085,6 +1114,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash", [\
+      ["npm:4.17.21", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/lodash-npm-4.17.21-6382451519-10c0.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lodash.includes", [\
       ["npm:4.3.0", {\
         "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/lodash.includes-npm-4.3.0-3a2f6fa22c-10c0.zip/node_modules/lodash.includes/",\
@@ -1379,6 +1417,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/mongodb-npm-7.0.0-e79b56fb74-10c0.zip/node_modules/mongodb/",\
+        "packageDependencies": [\
+          ["mongodb", "npm:7.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["virtual:9a74db57a4917d1b044e49dda6af907237c5bdc5b02c32db20d17eb402333729be5a23f814562e14e7c5e4169469c5c930d3c8508eb2421832a94f067e0caa8d#npm:6.20.0", {\
         "packageLocation": "./.yarn/__virtual__/mongodb-virtual-fa1fad76a8/5/C:/Users/hp/AppData/Local/Yarn/Berry/cache/mongodb-npm-6.20.0-5d66340ebb-10c0.zip/node_modules/mongodb/",\
         "packageDependencies": [\
@@ -1418,6 +1463,46 @@ const RAW_RUNTIME_STATE =
           "socks"\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/mongodb-virtual-076432691c/5/C:/Users/hp/AppData/Local/Yarn/Berry/cache/mongodb-npm-7.0.0-e79b56fb74-10c0.zip/node_modules/mongodb/",\
+        "packageDependencies": [\
+          ["@aws-sdk/credential-providers", null],\
+          ["@mongodb-js/saslprep", "npm:1.3.2"],\
+          ["@mongodb-js/zstd", null],\
+          ["@types/aws-sdk__credential-providers", null],\
+          ["@types/gcp-metadata", null],\
+          ["@types/kerberos", null],\
+          ["@types/mongodb-client-encryption", null],\
+          ["@types/mongodb-js__zstd", null],\
+          ["@types/snappy", null],\
+          ["@types/socks", null],\
+          ["bson", "npm:7.0.0"],\
+          ["gcp-metadata", null],\
+          ["kerberos", null],\
+          ["mongodb", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.0"],\
+          ["mongodb-client-encryption", null],\
+          ["mongodb-connection-string-url", "npm:7.0.0"],\
+          ["snappy", null],\
+          ["socks", null]\
+        ],\
+        "packagePeers": [\
+          "@aws-sdk/credential-providers",\
+          "@mongodb-js/zstd",\
+          "@types/aws-sdk__credential-providers",\
+          "@types/gcp-metadata",\
+          "@types/kerberos",\
+          "@types/mongodb-client-encryption",\
+          "@types/mongodb-js__zstd",\
+          "@types/snappy",\
+          "@types/socks",\
+          "gcp-metadata",\
+          "kerberos",\
+          "mongodb-client-encryption",\
+          "snappy",\
+          "socks"\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["mongodb-connection-string-url", [\
@@ -1426,6 +1511,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/whatwg-url", "npm:11.0.5"],\
           ["mongodb-connection-string-url", "npm:3.0.2"],\
+          ["whatwg-url", "npm:14.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.0.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/mongodb-connection-string-url-npm-7.0.0-33e9625fad-10c0.zip/node_modules/mongodb-connection-string-url/",\
+        "packageDependencies": [\
+          ["@types/whatwg-url", "npm:13.0.0"],\
+          ["mongodb-connection-string-url", "npm:7.0.0"],\
           ["whatwg-url", "npm:14.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -1487,6 +1581,28 @@ const RAW_RUNTIME_STATE =
           ["object-assign", "npm:4.1.1"],\
           ["type-is", "npm:1.6.18"],\
           ["xtend", "npm:4.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["multer-storage-cloudinary", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/multer-storage-cloudinary-npm-4.0.0-ba35fc7230-10c0.zip/node_modules/multer-storage-cloudinary/",\
+        "packageDependencies": [\
+          ["multer-storage-cloudinary", "npm:4.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/multer-storage-cloudinary-virtual-4448546e7a/5/C:/Users/hp/AppData/Local/Yarn/Berry/cache/multer-storage-cloudinary-npm-4.0.0-ba35fc7230-10c0.zip/node_modules/multer-storage-cloudinary/",\
+        "packageDependencies": [\
+          ["@types/cloudinary", null],\
+          ["cloudinary", "npm:2.8.0"],\
+          ["multer-storage-cloudinary", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/cloudinary",\
+          "cloudinary"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1719,6 +1835,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["q", [\
+      ["npm:1.5.1", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/q-npm-1.5.1-a28b3cfeaf-10c0.zip/node_modules/q/",\
+        "packageDependencies": [\
+          ["q", "npm:1.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["qs", [\
       ["npm:6.14.0", {\
         "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/qs-npm-6.14.0-6b298311eb-10c0.zip/node_modules/qs/",\
@@ -1787,13 +1912,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bcryptjs", "npm:3.0.2"],\
+          ["cloudinary", "npm:2.8.0"],\
           ["cors", "npm:2.8.5"],\
           ["dotenv", "npm:17.2.3"],\
           ["express", "npm:5.2.1"],\
           ["expressjs", "npm:1.0.1"],\
           ["jsonwebtoken", "npm:9.0.2"],\
+          ["mongodb", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.0"],\
           ["mongoose", "npm:8.19.2"],\
           ["multer", "npm:2.0.2"],\
+          ["multer-storage-cloudinary", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.0"],\
           ["node-fetch", "npm:3.3.2"],\
           ["nodemon", "npm:3.1.11"],\
           ["root-workspace-0b6124", "workspace:."]\
