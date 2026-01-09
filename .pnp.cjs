@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bcryptjs", "npm:3.0.2"],\
-          ["cloudinary", "npm:2.8.0"],\
+          ["cloudinary", "npm:1.41.3"],\
           ["cors", "npm:2.8.5"],\
           ["dotenv", "npm:17.2.3"],\
           ["express", "npm:5.2.1"],\
@@ -373,12 +373,36 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cloudinary", [\
-      ["npm:2.8.0", {\
-        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/cloudinary-npm-2.8.0-61d8aed053-10c0.zip/node_modules/cloudinary/",\
+      ["npm:1.41.3", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/cloudinary-npm-1.41.3-8c0799a690-10c0.zip/node_modules/cloudinary/",\
         "packageDependencies": [\
-          ["cloudinary", "npm:2.8.0"],\
+          ["cloudinary", "npm:1.41.3"],\
+          ["cloudinary-core", "virtual:8c0799a690c94c7c3e800243205a7f680a7b20a7ef9513f995037e7f78996a8437b8648778de3c6a82019d8ca80306bfeaefa665432bea81d270376118718023#npm:2.14.0"],\
+          ["core-js", "npm:3.47.0"],\
           ["lodash", "npm:4.17.21"],\
           ["q", "npm:1.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cloudinary-core", [\
+      ["npm:2.14.0", {\
+        "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/cloudinary-core-npm-2.14.0-159ae587ba-10c0.zip/node_modules/cloudinary-core/",\
+        "packageDependencies": [\
+          ["cloudinary-core", "npm:2.14.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:8c0799a690c94c7c3e800243205a7f680a7b20a7ef9513f995037e7f78996a8437b8648778de3c6a82019d8ca80306bfeaefa665432bea81d270376118718023#npm:2.14.0", {\
+        "packageLocation": "./.yarn/__virtual__/cloudinary-core-virtual-fea08abe9a/5/C:/Users/hp/AppData/Local/Yarn/Berry/cache/cloudinary-core-npm-2.14.0-159ae587ba-10c0.zip/node_modules/cloudinary-core/",\
+        "packageDependencies": [\
+          ["@types/lodash", null],\
+          ["cloudinary-core", "virtual:8c0799a690c94c7c3e800243205a7f680a7b20a7ef9513f995037e7f78996a8437b8648778de3c6a82019d8ca80306bfeaefa665432bea81d270376118718023#npm:2.14.0"],\
+          ["lodash", "npm:4.17.21"]\
+        ],\
+        "packagePeers": [\
+          "@types/lodash",\
+          "lodash"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -438,6 +462,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../C:/Users/hp/AppData/Local/Yarn/Berry/cache/cookie-signature-npm-1.2.2-8474a8ac29-10c0.zip/node_modules/cookie-signature/",\
         "packageDependencies": [\
           ["cookie-signature", "npm:1.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["core-js", [\
+      ["npm:3.47.0", {\
+        "packageLocation": "./.yarn/unplugged/core-js-npm-3.47.0-cf3c257d1a/node_modules/core-js/",\
+        "packageDependencies": [\
+          ["core-js", "npm:3.47.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1597,7 +1630,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/multer-storage-cloudinary-virtual-4448546e7a/5/C:/Users/hp/AppData/Local/Yarn/Berry/cache/multer-storage-cloudinary-npm-4.0.0-ba35fc7230-10c0.zip/node_modules/multer-storage-cloudinary/",\
         "packageDependencies": [\
           ["@types/cloudinary", null],\
-          ["cloudinary", "npm:2.8.0"],\
+          ["cloudinary", "npm:1.41.3"],\
           ["multer-storage-cloudinary", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.0"]\
         ],\
         "packagePeers": [\
@@ -1912,7 +1945,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["bcryptjs", "npm:3.0.2"],\
-          ["cloudinary", "npm:2.8.0"],\
+          ["cloudinary", "npm:1.41.3"],\
           ["cors", "npm:2.8.5"],\
           ["dotenv", "npm:17.2.3"],\
           ["express", "npm:5.2.1"],\
